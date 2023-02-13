@@ -15,13 +15,6 @@ Get dependencies:
 $ pip3 install flask
 ~~~
 
-Initialize DB:
-~~~
-$ cd server/src
-$ flask init-db
-Initialized the database.
-~~~
-
 Start the interface:
 ~~~
 $ cd server/src
