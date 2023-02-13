@@ -1,0 +1,231 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    min-width: 100vw;
+}
+
+#workspace {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cardlist_view {
+    /* float: left; */
+    width: 50%;
+    margin: 3px;
+    margin-right: 3px;
+}
+
+#cardone_view {
+    /* float: left; */
+    width: 50%;
+    margin: 3px;
+    margin-left: 3px;
+}
+
+#load_task_control_btns {
+    background: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#editor_grid_control_btns {
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: white;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.layer_preview {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    margin: 1px;
+    /* margin-left: 180px; */
+    padding: 1px;
+}
+
+.input_preview {
+    display: inline-block;
+    width: fit-content;
+    margin: 5px;
+    /* float: left; */
+}
+
+.arrow {
+    display: inline-block;
+    width: fit-content;
+    justify-content: center;
+    margin: 5px;
+    /* float: left; */
+}
+
+.output_preview {
+    display: inline-block;
+    width: fit-content;
+    margin: 5px;
+    /* float: right; */
+}
+
+#data_panel {
+    justify-content : center;
+}
+
+.admin_btn {
+    flex: left;
+}
+
+#approve_solution_btn {
+    width: 100px;
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(28, 184, 65);
+}
+
+#disapprove_solution_btn {
+    width: 100px;
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: blue;
+}
+
+#delete_solution_btn {
+    width: 100px;
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: red;
+}
+
+#submit_final_btn {
+    color: black;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(253, 202, 134);
+}
+
+#approve_solution_btn:active {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#disapprove_solution_btn:active {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+button:focus {outline:0;}
+
+/* Float four columns side by side */
+div:focus {
+    background-color: beige;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    margin-bottom: 20px;
+    cursor : pointer;
+    font-size: 10px;
+    width: 143px;
+    height: 154px;
+  }
+
+
+label {
+    margin-left: 10px;
+}
+
+input, button {
+    margin-left: 10px;
+}
+
+#resize_btn {
+    margin-left: 0;
+}
+
+/*Task demonstration*/
+
+.pair_preview {
+    height: 200px;
+    padding: 5px;
+    border-bottom: solid 1px #a1a1a1;
+}
+
+.text {
+    text-align: center;
+    background: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.cardLabel {
+    text-align: center;
+    background: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+#task_demo_header {
+    margin: 10px;
+}
+
+#modal_bg {
+    background-color: black;
+    width: 100%;
+    min-height: 10000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+#modal {
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    padding: 100px;
+    width: 500px;
+    margin-top: 100px;
+}
+
+#modal input {
+    margin-left: 70px;
+}

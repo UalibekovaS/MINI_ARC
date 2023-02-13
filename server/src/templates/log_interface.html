@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Log Visualizer</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="{{ url_for('static', filename='js/common.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/log_interface.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/testing_interface.js') }}"></script>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/common.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/log_interface.css') }}">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">    
+</head>
+
+<body>
+    <div id="main">
+        <div id="menu">
+        <div class="boxed">
+            <h3>TASK NAME</h3>
+            <label id='current_task_name' for="random_task_btn">Task name: </label>
+            </div>
+            <br/>
+            <br />
+            <br/>
+            <div class="logpair">
+                <div class="loggrid" id="input_grid"></div>
+                    <h4>&#8594;</h4>
+                <div class="loggrid" id="output_grid"></div>
+            </div>
+            <div class = "overview" id= "overview"><a id = "active" >OVERVIEW</a></div>
+            
+        </p>
+        </div> 
+        <div id="visualization">  
+            <div class = "overview_page" id ='overview_page' hidden = "false">
+                <div class = "training_text">TRAINING EXAMPLES</div>
+            
+                <div class="test_grids" id = "testview"></div>
+            </div>
+
+            <div class="grid" id="show_grid">
+                <div id="grid_control">
+                </div>
+                <div class = "trace_text" id = "trace_text">Trace</div>
+                <div class="grid" id="main_grid"></div> 
+                <label id="action_tool"></label>
+            </div>  
+        </div>
+        <div id="action">
+            <label id="action_description"></label>
+        </div>
+    </div>
+</body>
+
+</html>
